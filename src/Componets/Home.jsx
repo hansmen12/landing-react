@@ -80,7 +80,7 @@ function Home(){
                              <button>ABOUT FAIRWAY R&A</button>
                          </div>
                     </div>
-                    <div className="ContainerAboutImage">
+                    <div className="ContainerAboutImage AboutMediaImage">
                     <figure class="snip1325"><img src={ImageAbout} alt="ls-sample6"/></figure>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ function Home(){
                         <div className="ContainerAboutTextInfoArrow">
                             
                         </div>
-                        <div className="ContainerAboutTextInfoP ContainerReadyTextInfoP">
+                        <div className="ContainerAboutTextInfoP ContainerReadyTextInfoP ContainerMediaTextInfo">
                             <div>
                                 <p>We provide opportunitiees in various positions and industries.R&A Work Staffing, LCC is capable of providing quality opportunities to our employees and our clients to develop strong relationships</p>
                             </div>
@@ -263,7 +263,7 @@ function Home(){
                             </div>
                         </div>
                         <div className="ContainerContactMap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.954149581044!2d-117.4532202!3d34.0706896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34ca723ba416b%3A0x3d54288748fdb921!2s16120%20Valley%20Blvd%20%236b%2C%20Fontana%2C%20CA%2092335%2C%20EE.%20UU.!5e0!3m2!1ses!2spe!4v1670450816183!5m2!1ses!2spe" width="600" height="450"  />
+                            <iframe className="Iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.954149581044!2d-117.4532202!3d34.0706896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34ca723ba416b%3A0x3d54288748fdb921!2s16120%20Valley%20Blvd%20%236b%2C%20Fontana%2C%20CA%2092335%2C%20EE.%20UU.!5e0!3m2!1ses!2spe!4v1670450816183!5m2!1ses!2spe" width="600" height="450"  />
                         </div>
                     </div>
                     
