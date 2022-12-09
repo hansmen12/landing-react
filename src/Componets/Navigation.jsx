@@ -55,6 +55,8 @@ export default class Navigation extends Component {
            <div className='ContainerLogoText'>
              <p>R&A Work Staffing LLC</p>
             </div>
+            <NavbarToggler onClick={this.toggle} />
+         
           <Collapse isOpen={this.state.isOpen} navbar>
            
             <Nav className="ml-auto" navbar>
@@ -62,10 +64,13 @@ export default class Navigation extends Component {
             </Nav>
             
           </Collapse>
-            <div className='ContainerButtonNumber'>
-              <button>(909)827-8183</button>
+
+            <div className='ContainerButtonNumber BotonNav'>
+              <a target="blank" style={{textDecoration:'none'}} href='https://api.whatsapp.com/send?phone=19098278183&text=Conecta%20Con%20Nosotros'>
+                
+              <button>+1 (909)827-8183</button>
+              </a>
             </div>
-          <NavbarToggler onClick={this.toggle} />
 
         </Navbar>
       </div>
