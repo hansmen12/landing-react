@@ -12,7 +12,7 @@ function App() {
           <Navigation mh-100 style={{margin:"100px"}}/>  
           <BrowserRouter>
               <Routes >            
-                 <Route path='/home' element={<Home/>}/>  
+                 <Route index path='/' element={<Home/>}/>  
                  <Route path='/about' element={<About/>}/>  
                  {/* <Route path='/employer' element={<Employer/>}/>   */}
 

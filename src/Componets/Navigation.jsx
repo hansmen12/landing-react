@@ -13,8 +13,8 @@ import {
 } from 'reactstrap';
 
 const links = [
-  { href: '#home', text: 'Home',className: 'Links' },
-  { href: '#about', text: 'About', className: 'Links' },
+  { href: '/', text: 'Home',className: 'Links' },
+  { href: 'about', text: 'About', className: 'Links' },
   { href: '#cata', text: 'Employer ' , className: 'Links' },
   { href: '#test2', text: 'Job seeker' , className: 'Links' },
 
