@@ -1,10 +1,10 @@
 import "./Home.scss"
 import {SiGooglemaps} from 'react-icons/si'
 import ImageAbout from '../assets/ImagenAbout.jpg'
-import ImageReady from  '../assets/imageready.jpg'
+import ImageReady from  '../assets/imagenbaner22.jpg'
 import Image1 from  '../assets/imagehome1.jpg'
 import Image2 from  '../assets/imagehome2.jpg'
-import Image3 from  '../assets/imagehome3.jpg'
+import Image3 from  '../assets/carrusel3.jpg'
 import {FaFacebookF} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
 import  {FaWhatsapp} from 'react-icons/fa'
@@ -27,7 +27,8 @@ function Home(){
             </div>
             <div className="ContainerBannerText">
                 <h2>
-                Your Partner In Staffing
+                Satisfying all of your Staffing and
+                    Lumping Needs
                 </h2>
                 <h3>
                 Family Owned & Operated 
@@ -36,21 +37,21 @@ function Home(){
                 New Staffing Branches Located in Fontana
                 </p>
                 <div className="ContainerButtons">
-                    <div className="ContainerButtonNumber ">
+                    {/* <div className="ContainerButtonNumber ">
                             <button>SEARCH JOBS</button>
-                    </div>
+                    </div> */}
                     <div className="ContainerButtonNumber">
                     <button>APPLY NOW</button>
                     </div>
-                    <div className="ContainerButtonNumber">
+                    {/* <div className="ContainerButtonNumber">
                     <button>EVENTS</button>
 
-                    </div>
+                    </div> */}
                 </div>
                 <div class="ContainerAdress">
                      <div class="location hero-slider-location w-hidden-small w-clearfix">
-
-                     <div class="location-text"><SiGooglemaps className="LogoMaps"/>Fontana,<br/>CA 92335 &amp;<br/>Valley Boulevard Suite</div>
+                
+                     <div class="location-text"><SiGooglemaps className="LogoMaps"/>16120 Valley Blvd Ste 6B,<br/>Fontana CA <br/>92335</div>
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@ function Home(){
                             </div>
                         </div>
                         <div className="ContainerButtonNumber ButtonAbout">
-                             <button>ABOUT FAIRWAY R&A</button>
+                             <button>ABOUT R&A</button>
                          </div>
                     </div>
                     <div className="ContainerAboutImage AboutMediaImage">
@@ -140,7 +141,7 @@ function Home(){
                                 <p>Whether you are looking for short-term, long-term or direct placement, you can depend on us for all your staffing needs.</p>
                             </div>
                             <div className="ContainerButtonNumber ButtonAbout">
-                             <button>ABOUT FAIRWAY R&A</button>
+                             <button>ABOUT R&A</button>
                             </div>
                         </div>
                         
@@ -174,8 +175,8 @@ function Home(){
                 <img src={Image1} alt="sample38" />
                 <div class="title">
                     <div>
-                    <h2>Penny</h2>
-                    <h4>Tool</h4>
+                    <h2>STAFFING</h2>
+                    <h4>SERVICES</h4>
                     </div>
                 </div>
                 <figcaption>
@@ -185,8 +186,8 @@ function Home(){
                 <figure class="snip1477 hover"><img src={Image2} alt="sample91" />
                 <div class="title">
                     <div>
-                    <h2>Ingredia</h2>
-                    <h4>Nutrisha</h4>
+                    <h2>EMPLOYEE</h2>
+                    <h4>INFORMATION</h4>
                     </div>
                 </div>
                 <figcaption>
@@ -196,8 +197,8 @@ function Home(){
                 <figure class="snip1477"><img src={Image3} alt="sample35" />
                 <div class="title">
                     <div>
-                    <h2>Hans</h2>
-                    <h4>Down</h4>
+                    <h2>LUMPING</h2>
+                    <h4>SERVICES</h4>
                     </div>
                 </div>
                 <figcaption>
@@ -212,7 +213,7 @@ function Home(){
                     </div>
                     <div className="ContainnerLocaleP">
                         <p>
-                        Committed to providing excellent service in areas such as Bell, Santa Ana, Huntington Park, Sacramento, Ontario, and more. To view the nearest location, enter your zip code or city below, or view our locations list <span>here</span>                         </p>
+                        Committed to providing excellent service in all San Bernardino County and Los Angeles County area                        </p>
                     </div>
                 </div>
                 <div className="ContainerLocaleMap">
