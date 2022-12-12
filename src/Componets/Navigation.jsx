@@ -18,6 +18,7 @@ const links = [
   { href: '/home', text: 'Employer ' , className: 'Links' },
   { href: '/home', text: 'Job seeker' , className: 'Links' },
 
+
 ];
 
 const createNavItem = ({ href, text, className }) => (
