@@ -180,7 +180,7 @@ function Home(){
                     </div>
                 </div>
                 <figcaption>
-                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    <p>Our temporary and direct hire staffing services are customized to your needs but designed for maximum efficiency.</p>
                 </figcaption>
                 </figure>
                 <figure class="snip1477 hover"><img src={Image2} alt="sample91" />
@@ -191,7 +191,7 @@ function Home(){
                     </div>
                 </div>
                 <figcaption>
-                    <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+                    <p>Our recruters work with you to find the best position that suits your needs,schedule and strengths.</p>
                 </figcaption>
                 </figure>
                 <figure class="snip1477"><img src={Image3} alt="sample35" />
@@ -202,7 +202,7 @@ function Home(){
                     </div>
                 </div>
                 <figcaption>
-                    <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+                    <p>Add freight handling capabilities to your operations converting fixed labor costs to variable costs and adding flexibility to your labor model. </p>
                 </figcaption>
                 </figure>
             </div>
