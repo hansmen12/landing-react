@@ -13,10 +13,11 @@ import {
 } from 'reactstrap';
 
 const links = [
-  { href: '/', text: 'Home',className: 'Links' },
-  { href: 'about', text: 'About', className: 'Links' },
-  { href: '#cata', text: 'Employer ' , className: 'Links' },
-  { href: '#test2', text: 'Job seeker' , className: 'Links' },
+  { href: '/home', text: 'Home',className: 'Links' },
+  { href: '/about', text: 'About', className: 'Links' },
+  { href: '/home', text: 'Employer ' , className: 'Links' },
+  { href: '/home', text: 'Job seeker' , className: 'Links' },
+
 
 ];
 
@@ -54,10 +55,16 @@ export default class Navigation extends Component {
            </div>
            <div className='ContainerLogoText'>
              <p>R&A Work Staffing LLC</p>
+
+            </div>
+            <div className=' ContainerLogoText2'>
+             <p>R&A Work </p>
+
             </div>
             <NavbarToggler onClick={this.toggle} />
+
          
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse className='CollapseDiv' isOpen={this.state.isOpen} navbar>
            
             <Nav className="ml-auto" navbar>
               {links.map(createNavItem)}

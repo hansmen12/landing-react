@@ -11,8 +11,10 @@ function App() {
     <div className='App'>     
           <Navigation mh-100 style={{margin:"100px"}}/>  
           <BrowserRouter>
-              <Routes >            
-                 <Route index path='/' element={<Home/>}/>  
+              <Routes >    
+                 <Route path='/' element={<Home/>}/>  
+                 <Route path='/home' element={<Home/>}/>  
+
                  <Route path='/about' element={<About/>}/>  
                  {/* <Route path='/employer' element={<Employer/>}/>   */}
 

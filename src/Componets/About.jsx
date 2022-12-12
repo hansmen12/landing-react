@@ -44,7 +44,7 @@ function About () {
                 We at R&A Work Staffing LLC understand that immediate response and flexibility is important. That’s why we maintain a well-stocked database of resumes, which enable us to quickly match the right person to fit and fill your needs. Let us help you with all your staffing needs today.
                 </p>
             </div>
-            <div className="ContainerAbutInfo">
+            <div className="ContainerAbutInfo ContainerAboutMedia">
                 <div className="ContainerAboutInfoContent">
                      <div className="ContainerAboutInfoBanner">
                       <p>

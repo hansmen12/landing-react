@@ -347,6 +347,7 @@ figure.snip1477 h4 {
   text-transform: uppercase;
 }
 figure.snip1477 h2 {
+  font-size: 18px;
   font-weight: 400;
 }
 figure.snip1477 h4 {
@@ -355,6 +356,7 @@ figure.snip1477 h4 {
   background-color:darkred;
   padding: 5px 10px;
   color: #ffffff;
+  font-size: 15px;
 }
 figure.snip1477 figcaption {
   position: absolute;
@@ -442,13 +444,12 @@ figure.snip1477.hover figcaption {
   padding-bottom: 50px;
   p{
     margin: 0px;
-    float: left;
 font-family: 'Open Sans', sans-serif;
 color: #000;
 font-size: 15px;
 line-height: 24px;
 font-weight: 300;
-text-align: left;
+text-align: center;
   }
 }
 .ContainerLocaleMap{
@@ -741,7 +742,7 @@ margin-bottom: 30px;
   .snip1325 img {
     height: 100%;
     position: absolute;
-    left: 0;
+    left: -100px;
     -webkit-transition: all 2s ease-out;
     transition: all 2s ease-out;
   }
@@ -758,10 +759,9 @@ margin-bottom: 30px;
     padding-left: 0px;
     height: 100%;
     flex-direction: column-reverse;
-    background-color: #000;
  }
   .ContainerAbotTextInfo{
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -770,12 +770,19 @@ margin-bottom: 30px;
         font-weight: 300;
     }
   }
+  
+  .image2{
+    width: 100%;
+  }
   .ContainerAboutImage{
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70%;
+  }
+  .AboutMediaImage{
+    width: 90% !important;
   }
   .ContainerAboutTextInfoArrow{
     width: 100%;
@@ -792,7 +799,7 @@ margin-bottom: 30px;
         justify-content: start;
         p{
             text-align: start;
-            width: 80%;
+            width: 100%;
         }
     }
   }
@@ -808,7 +815,7 @@ margin-bottom: 30px;
     padding-bottom: 10px;
     justify-content: space-evenly;
     background: linear-gradient(180deg, #ecf0f1, #ecf0f1);
-
+    display:none;
   }
   .ContainerCertificateText{
     width: auto;
@@ -1027,8 +1034,9 @@ figure.snip1477.hover figcaption {
 }
 .ContainerJobImage{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
+    flex-direction: column;
     margin-top: 100px;
     margin-bottom: 70px;
     padding-bottom: 70px;
@@ -1101,7 +1109,7 @@ text-align: left;
 }
 .ContainerLocaleMapFind{
   margin: 0;
-  
+  flex-direction: column;
   button{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1113,7 +1121,7 @@ text-align: left;
 
 }
 .ContainerLocaleMapFindInput{
-  width: 50%;
+  width: 100%;
   input{
     width: 100%;
   }
@@ -1125,6 +1133,7 @@ text-align: left;
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 80px;
+  flex-direction: column;
   
 }
 .ContainerContactP{
@@ -1231,7 +1240,20 @@ text-align: left;
 margin-bottom: 30px;
   }
 }
+.Iframe{
+  height: 300px;
+  width: 100%;
+}
 
-
-
+.ContainerMediaTextInfo{
+  transform: translate(0px) !important;
+  padding: 0px !important;
+}
+.image2{
+  width: 80% !important;
+  height: 450px !important;
+}
+.ContainerContactMap{
+  margin-top: 40px;
+}
 }
