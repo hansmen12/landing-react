@@ -1,148 +1,150 @@
 import Footer from "./Footer";
 import './About.scss'
-import emailjs from 'emailjs-com'
+// import emailjs from 'emailjs-com'
 import {useRef} from 'react'
+import './Employer.scss'
 function Employer () {
     const form = useRef()
-const sendEmail = e => {
-    e.preventDefault()
-    console.log(e.target)
-    emailjs
-      .sendForm('service_nd82kfq', 'template_uj335xo', e.target, '2acSMxp1-9FSQAIJB')
-      .then(
-        result => {
-          alert('Correo enviado correctamente')
-        },
-        error => {
-          alert(`Ocurrio un error, intente nuevamente - ${error}`)
-        }
-      )
-  }
+// const sendEmail = e => {
+//     e.preventDefault()
+//     console.log(e.target)
+//     emailjs
+//       .sendForm('service_nd82kfq', 'template_uj335xo', e.target, '2acSMxp1-9FSQAIJB')
+//       .then(
+//         result => {
+//           alert('Correo enviado correctamente')
+//         },
+//         error => {
+//           alert(`Ocurrio un error, intente nuevamente - ${error}`)
+//         }
+//       )
+//   }
     return (
         <div className="ContainerAbout">
-            <div className="ContainerAboutBanner">
-                <div className="ContainerAboutUs">
+            <div className="ContainerEmployeBanner">
+                <div className="ContainerEmploye">
                     <p>
-                        Employer
+                         Job Seekers
                     </p>
                 </div>
             </div>
+            
             <div className="ContainerAboutTextContent">
+                
+                <div className="ContainerAboutTextP ">
+                    <p>
+                    Whether you’re looking for something new, want to work the right shift for you or simply need a job, R&A Work Staffing can help you find the right
+                    opportunity that matches your skills and interests. We work with a wide range of companies throughout California that are looking to power their
+                    workforce with reliable, skilled workers like you.   
+                    </p>
+                      </div>
                 <div className="ContainerAboutTextBanner">
                     <p>
-                    Find Qualified Staff For Your Company
+                    WE OFFER TEMP-TO-HIRE AND PERMANENT POSITIONS IN THESE
+                    SECTORS
                     </p>
                 </div>
-                <div className="ContainerAboutTextP">
-                    <p>
-                    At R&A Work Staffing LLC we help you find the perfect candidate for your accounting and finance staffing needs right NOW. We know the local job market like the backs of our hands and have a distinct eye for top notch professionals working within the market.
+                <div className="ContainerAboutTextP ContainerEmployerTextP">
+                <div className="ContainerTextDivs">
 
-                    Our staffing and recruiting professionals know exactly what to look for in your next great candidate. </p>
+                <div className="ContainerTextUl">
+                    <div className="ContainerTextIconUl">
+
+                    </div>
+                    <div className="ContainerTextP">
+                        <p>Light Industrial</p>
+                    </div>
                 </div>
-                <div className="ContainerAboutTextFile">
-                    <div className="ContainerAboutTextFileContent">
-                        <div className="Cona">
+                <div className="ContainerTextUl">
+                    <div className="ContainerTextIconUl">
 
+                    </div>
+                    <div className="ContainerTextP">
+                        <p>Office/Clerical</p>
+                    </div>
+                </div>
+                <div className="ContainerTextUl">
+                    <div className="ContainerTextIconUl">
+
+                    </div>
+                    <div className="ContainerTextP">
+                        <p>Warehousing</p>
+                    </div>
+                </div>
+                <div className="ContainerTextUl">
+                    <div className="ContainerTextIconUl">
+
+                    </div>
+                    <div className="ContainerTextP">
+                        <p>Manufacturing</p>
+                    </div>
+                </div>    
+                </div>
+
+                </div>
+                <div className="ContainerAboutTextP ">
+                    <p>
+                    R&A Work Staffing embraces its workforce, their diversity, work ethic and commitment to getting the job done right. We make it a priority to
+                    understand the needs of our associates by listening to concerns and guiding them through the application process. We embrace a safety culture to
+                    ensure all associates return home to their families at the end of their shift. Our goal is to find the right jobs for the right people every day.  
+                    </p>
+                    
+                </div>
+                    
+               
+
+
+
+
+
+
+
+
+                <div className="ContainerAboutTextBanner">
+                    <p>
+                    ARE YOU INTERESTED IN BECOMING A LUMPER?
+                    </p>
+                </div>
+                <div className="ContainerAboutTextP ">
+                    
+                </div>
+            </div>
+            
+            <div className="ContainerFormEmploye">
+                <form>
+                    <div className="FormContainerEmploye">
+                        <div className="FormContainerEmployeDiv">
+                            <input placeholder="Name"/>
+                            <input placeholder="Position"/>
+                        </div>
+                        <div className="FormContainerEmployeDiv">
+                            <input placeholder="Email"/>
+                            <input placeholder="Phone"/>
+                        </div>
+                        <div className="FormContainerEmployeDivs">
+                            <input placeholder="Company"/>
+                        </div>
+                        <div className="FormContainerEmployeDivs">
+                            <input placeholder="Address"/>
+                        </div>
+                        <div className="FormContainerEmployeDivs">
+                            <input placeholder="Subject"/>
+                        </div>
+                        <div className="FormContainerEmployeDivs">
+                            <input placeholder="Message" style={{paddingBottom:"70px",textAlign:"initial",display:"flex"}}/>
+                        </div>
+
+
+
+                    </div>
+                    <div className="FormBotonSumbit ContainerButtonNumber">
+                        <div>
+                            <button>Sumbit</button>
                         </div>
                     </div>
-                </div>
-
-
-
-
-
-
-
-
-                <div className="ContainerAboutTextBanner">
-                    <p>
-                    Short-Term & Long-Term Placement
-                    </p>
-                </div>
-                <div className="ContainerAboutTextP">
-                    <p>
-                    Whether you are looking for short-term, long-term or direct placement, you can depend on us for all your staffing needs. <br/>
-
-                    In the current environment, employers that have flexibility in adjusting labor requirements to meet production and service demands have a competitive advantage over those with less flexible resources.     </p>
-                </div>
-            </div>
-            <div className="ContainerAboutImage">
-
-            </div>
-            <div className="ContainerAboutP">
-                <p>
-                We at R&A Work Staffing LLC understand that immediate response and flexibility is important. That’s why we maintain a well-stocked database of resumes, which enable us to quickly match the right person to fit and fill your needs. Let us help you with all your staffing needs today.
-                </p>
-            </div>
-            <div className="ContainerAbutInfo">
-                <div className="ContainerAboutInfoContent">
-                     <div className="ContainerAboutInfoBanner">
-                      <p>
-                        Headquarters
-                      </p>
-                     </div>
-                     <div className="ContainerAboutInfoBannerP">
-                        <p>
-                        16120 Valley Boulevard Suite 6B Fontana, CA 92335 USA
-                        </p>
-                    </div>
-                </div>
-                <div className="ContainerAboutInfoContent">
-                     <div className="ContainerAboutInfoBanner">
-                      <p>
-                      Call Us
-                      </p>
-                     </div>
-                     <div className="ContainerAboutInfoBannerP">
-                        <p>
-                        +1 (909)827-8183
-                        </p>
-                      </div>
-                </div>
-                <div className="ContainerAboutInfoContent">
-                     <div className="ContainerAboutInfoBanner">
-                      <p>
-                      Email
-                      </p>
-                     </div>
-                     <div className="ContainerAboutInfoBannerP">
-                        <p>
-                        info@r&astaffing.com
-                           </p>
-                      </div>
-                </div>
-                <div className="ContainerAboutInfoContent">
-                     <div className="ContainerAboutInfoBanner">
-                      <p>
-                      Hours
-                      </p>
-                     </div>
-                     <div className="ContainerAboutInfoBannerP">
-                        <p>
-                        Mon:	8:00 AM - 5:00 PM<br/>
-                        Tue:	8:00 AM - 5:00 PM<br/>
-                        Wed:	8:00 AM - 5:00 PM<br/>
-                        Thu:	8:00 AM - 5:00 PM<br/>
-                        Fri:	8:00 AM - 5:00 PM<br/>
-                        Sat:	Closed<br/>
-                        Sun:	Closed           
-                        </p>
-                      </div>
-                </div>
-                <div>
-                <form onSubmit = {sendEmail}>
-                    <label>Nombre y Apellidos</label>
-                    <input type="text" name="from_name" />
-                    <label>Correo Electrónico</label>
-                    <input type="text" name="reply_to" />
-                    <label>Telefono</label>
-                    <input type="text" name="phone" />
-                    <label>Asunto</label>
-                    <textarea name="message"/>
-                    <button className="btn btn__primary" type="submit">Enviar Mensaje</button>
                 </form>
-                </div>
             </div>
+            
             <Footer/>
         </div>
 
