@@ -21,7 +21,8 @@ function About () {
                 </div>
                 <div className="ContainerAboutTextP">
                     <p>
-                         If you are looking for a staffing service that can provide everything you need, look no further. At R&A Work Staffing LLC you can find comfort knowing that we are dedicated to filling openings with qualified personnel in a swift manner.
+                    R&A Work Staffing, we take pride in our willingness and ability to fully understand and identify with the needs of not just our client’s  business model, but also with the workforce at our client sites. We are constantly adjusting to the ever-changing conditions of our  business sector through our leaders in our Safety/Risk, Human Resources, Legal, Payroll, and Marketing departments. If you are  looking for a true staffing partner who is knowledgeable in emerging recruitment trends trust R&A Work Staffing!
+
                     </p>
                 </div>
                 <div className="ContainerAboutTextBanner">

@@ -1,0 +1,95 @@
+.ContainerEmployerTextP{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    .ContainerTextUl{
+        display: flex;
+    }
+    .ContainerTextDivs{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style:none;
+       
+    }
+    .ContainerTextIconUl{
+        height: 10px;
+        width: 10px;
+    margin-top: 7px;
+    margin-left: 13px;
+    margin-right: 15px;
+    border-radius: 60px;
+    background-color: #bb1020;
+    }
+    .ContainerTextP{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+.ContainerEmployeBanner{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/banneremploye.jpg');
+}
+.ContainerEmploye{
+        width: 83%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        p{
+            font-family: Montserrat, sans-serif;
+            font-weight: 100;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 38px;
+            color: aliceblue;
+        }
+
+}
+.ContainerFormEmploye{
+    width: 40%;
+    margin-bottom: 70px;
+    form{
+        width: 100%;
+    }
+}
+.FormContainerEmploye{
+    width: 100%;
+    padding: 10px;
+
+}
+.FormContainerEmployeDiv{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    input{
+        width: 48%;
+        padding: 3px;
+    }
+}
+.FormContainerEmployeDivs{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    input{
+        width: 100%;
+        padding: 3px;
+
+    }
+}
+
+.FormBotonSumbit{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

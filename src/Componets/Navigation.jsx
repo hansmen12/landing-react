@@ -8,22 +8,22 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   Container
 } from 'reactstrap';
+import { NavLink} from "react-router-dom"
 
 const links = [
-  { href: '/home', text: 'Home',className: 'Links' },
-  { href: '/about', text: 'About', className: 'Links' },
-  { href: '/home', text: 'Employer ' , className: 'Links' },
-  { href: '/home', text: 'Job seeker' , className: 'Links' },
+  { href: '/home', text: 'Home',className: 'Links' ,key:1},
+  { href: '/about', text: 'About', className: 'Links', key:2 },
+  { href: '/home', text: 'Employer ' , className: 'Links', key:3 },
+  { href: '/employer', text: 'Job Seeker' , className: 'Links',key:4 },
 
 
 ];
 
-const createNavItem = ({ href, text, className }) => (
+const createNavItem = ({ href, text, className,key }) => (
   <NavItem>
-    <NavLink href={href} className={className}>
+    <NavLink to={href} key={key} style={{textDecoration:"none"}} className={className}>
       {text}
     </NavLink>
   </NavItem>

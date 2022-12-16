@@ -10,9 +10,14 @@ import {FaInstagram} from 'react-icons/fa'
 import  {FaWhatsapp} from 'react-icons/fa'
 import {FaLocationArrow} from 'react-icons/fa'
 import Footer from './Footer'
-
+import { useNavigate } from "react-router-dom";
 import $  from "jquery";
 function Home(){
+
+    const navigate = useNavigate()
+
+
+
     $(".hover").hover(
         function () {
           $(this).removeClass("hover");
@@ -40,7 +45,11 @@ function Home(){
                     {/* <div className="ContainerButtonNumber ">
                             <button>SEARCH JOBS</button>
                     </div> */}
-                    <div className="ContainerButtonNumber">
+                    <div onClick={() => {
+
+                        navigate('/employer')
+
+                    }}   className="ContainerButtonNumber">
                     <button>APPLY NOW</button>
                     </div>
                     {/* <div className="ContainerButtonNumber">
