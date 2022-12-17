@@ -186,6 +186,7 @@ function Employer () {
                     <button type="submit">Submit</button>
                 </form>
             </div>
+            <Footer/>
         </div>
     )
 }
