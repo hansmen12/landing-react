@@ -1,24 +1,50 @@
 import Footer from "./Footer";
 import './About.scss'
 // import emailjs from 'emailjs-com'
-import {useRef} from 'react'
+import {useState} from 'react'
 import './Employer.scss'
+import Swal from 'sweetalert2'
+import axios from "axios";
+
 function Employer () {
-    const form = useRef()
-// const sendEmail = e => {
-//     e.preventDefault()
-//     console.log(e.target)
-//     emailjs
-//       .sendForm('service_nd82kfq', 'template_uj335xo', e.target, '2acSMxp1-9FSQAIJB')
-//       .then(
-//         result => {
-//           alert('Correo enviado correctamente')
-//         },
-//         error => {
-//           alert(`Ocurrio un error, intente nuevamente - ${error}`)
-//         }
-//       )
-//   }
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [position, setPosition] = useState()
+    const [phone, setPhone] = useState()
+    const [company, setCompany] = useState()
+    const [address, setAddress] = useState()
+    const [subject, setSubject] = useState()
+    const [message, setMessage] = useState()
+
+    const handleSendEmail = async () => {
+        const databody = {
+            name,
+            email,
+            position,
+            phone,
+            company,
+            address,
+            subject,
+            message
+        }
+        const config = {
+            headers: { 
+              'Content-Type': "application/json",
+            // 'Authorization': `Bearer ${session.token}`
+              
+            },
+        };
+        const url = `https://api.randaworkstaffing.com/`
+        const {data} = await axios.post(url, databody, config)
+        if(data){
+            Swal.fire({
+                title: 'Success!',
+                text: data.response,
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+        }
+    }
     return (
         <div className="ContainerAbout">
             <div className="ContainerEmployeBanner">
@@ -111,27 +137,26 @@ function Employer () {
             </div>
             
             <div className="ContainerFormEmploye">
-                <form>
                     <div className="FormContainerEmploye">
                         <div className="FormContainerEmployeDiv">
-                            <input placeholder="Name"/>
-                            <input placeholder="Position"/>
+                            <input placeholder="Name" onChange={(e)=> setName(e.target.value)}/>
+                            <input placeholder="Position" onChange={(e)=> setPosition(e.target.value)}/>
                         </div>
-                        <div className="FormContainerEmployeDiv">
-                            <input placeholder="Email"/>
-                            <input placeholder="Phone"/>
-                        </div>
-                        <div className="FormContainerEmployeDivs">
-                            <input placeholder="Company"/>
+                        <div className="FormContainerEmployeDiv" >
+                            <input placeholder="Email" onChange={(e)=> setEmail(e.target.value)}/>
+                            <input placeholder="Phone" onChange={(e)=> setPhone(e.target.value)}/>
                         </div>
                         <div className="FormContainerEmployeDivs">
-                            <input placeholder="Address"/>
+                            <input placeholder="Company" onChange={(e)=> setCompany(e.target.value)}/>
                         </div>
                         <div className="FormContainerEmployeDivs">
-                            <input placeholder="Subject"/>
+                            <input placeholder="Address"  onChange={(e)=> setAddress(e.target.value)}/>
                         </div>
                         <div className="FormContainerEmployeDivs">
-                            <input placeholder="Message" style={{paddingBottom:"70px",textAlign:"initial",display:"flex"}}/>
+                            <input placeholder="Subject" onChange={(e)=> setSubject(e.target.value)}/>
+                        </div>
+                        <div className="FormContainerEmployeDivs">
+                            <input placeholder="Message" style={{paddingBottom:"70px",textAlign:"initial",display:"flex"}}  onChange={(e)=> setMessage(e.target.value)}/>
                         </div>
 
 
@@ -139,10 +164,9 @@ function Employer () {
                     </div>
                     <div className="FormBotonSumbit ContainerButtonNumber">
                         <div>
-                            <button>Sumbit</button>
+                            <button onClick={handleSendEmail}>Sumbit</button>
                         </div>
                     </div>
-                </form>
             </div>
             
             <Footer/>
