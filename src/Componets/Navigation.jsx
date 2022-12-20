@@ -15,10 +15,8 @@ import { NavLink} from "react-router-dom"
 const links = [
   { href: '/home', text: 'Home',className: 'Links' ,key:1},
   { href: '/about', text: 'About', className: 'Links', key:2 },
-  { href: '/home', text: 'Employer ' , className: 'Links', key:3 },
-  { href: '/employer', text: 'Job Seeker' , className: 'Links',key:4 },
-
-
+  { href: '/employer', text: 'Employer ' , className: 'Links', key:3 },
+  { href: '/job-seeker', text: 'Job Seeker' , className: 'Links',key:4 },
 ];
 
 const createNavItem = ({ href, text, className,key }) => (

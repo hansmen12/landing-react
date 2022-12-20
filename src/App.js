@@ -7,6 +7,7 @@ import { Routes } from 'react-router-dom';
 import About from './Componets/About';
 
 import Employer from './Componets/Employer'
+import JobSeeker from './Componets/JobSeeker';
 function App() {
   return (
     <div className='App'>     
@@ -18,9 +19,7 @@ function App() {
                  <Route exact path='/home' element={<Home/>}/>  
                  <Route exact path='/about' element={<About/>}/>  
                  <Route path='/employer' element={<Employer/>}/>  
-
-
-                        
+                 <Route path='/job-seeker' element={<JobSeeker/>}/>
               </Routes>     
           
           
