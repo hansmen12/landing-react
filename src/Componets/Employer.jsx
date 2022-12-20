@@ -3,10 +3,11 @@ import './About.scss'
 import Box from "../assets/boxEmployer.jpg"
 import Box1 from "../assets/boxEmployer1.jpg"
 // import emailjs from 'emailjs-com'
-import {useRef} from 'react'
+// import {useRef} from 'react'
 import './Employer.css'
 import { useForm } from 'react-hook-form';
 import Message from "./Message";
+// Employer
 function Employer () {
     const { register, handleSubmit, reset, formState: { errors }} = useForm();
     const submit = (data) => {
@@ -21,7 +22,7 @@ function Employer () {
             yesOrNo: ""
         })
     };
-    const form = useRef()
+    // const form = useRef()
 // const sendEmail = e => {
 //     e.preventDefault()
 //     console.log(e.target)
